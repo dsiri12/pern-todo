@@ -1,4 +1,6 @@
-CREATE DATABASE perntodo;
+-- CREATE DATABASE perntodo;
+
+-- \c pernstack
 
 CREATE TABLE todo(
     todo_id SERIAL PRIMARY KEY,
