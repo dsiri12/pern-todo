@@ -4,7 +4,6 @@ const app = express();
 const cors = require("cors");
 const pool = require("./db");
 const path = require("path");
-const PORT = process.env.PORT || 5000;
 
 //process.env.PORT
 //process.env.NODE_ENV => production or undefined
@@ -102,6 +101,6 @@ app.get("*", (req,res) => {
 });
 
 const port = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`server has started on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`server has started on port ${port}`);
 });
